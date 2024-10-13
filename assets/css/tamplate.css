@@ -1,0 +1,631 @@
+/*@keyframes exemplo{animação para o cabeçalho degrade com cores
+    75%{background-color:lightgray};
+    25%{background-color:white};
+
+}*/
+
+* {
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    display: flex;
+    height: 7.5rem;
+    justify-content: center;
+    animation-name: exemplo;
+    animation-duration:2s;
+    animation-iteration-count: 2;
+    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 56.25rem;
+    height: 6.25rem;
+    margin-bottom: 46.5rem;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-top: 1.25rem;
+    padding-left: 18.75rem;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    padding-right: 18.75rem;
+    
+
+}
+nav li, nav ul{
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    display: flex;
+}
+nav a{
+    display: block;
+    padding: 0.93rem;
+    text-decoration: none;
+    text-transform: uppercase;/*transforma o texto em maisculo*/
+    text-shadow: 2px 1px 5px #888888;
+    color: #727272;
+    font-family: arial;
+    /*box-shadow: 5px 5px 5px #888888;sombra nos links de navegação*/
+    
+
+
+}
+nav .active a, 
+nav a:hover{
+    background-color:rgb(255, 0, 0);
+    color:white;
+}
+#banner{
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/pizza2.jpg');/*endereço da  imagem*/
+    background-position: center;
+    background-size: cover;/*cover recorta a imagem e redmesiona*/
+    height: 44.87rem;
+    margin-top: 0;
+    width: 100%;
+
+}
+.column{
+    flex-direction: column;
+
+}
+.tituloprincipal h1{
+    color: #ffffff;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 100px;
+    margin-left: 0;
+    
+}
+.tituloprincipal h2{
+    color: #ffffff;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+.tituloprincipal{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.banner_options{
+    height: auto;
+    display: flex;
+
+}
+.banner1,
+.banner2,
+.banner3{
+    flex:1;/*flex:1 faz com que os banners 1, 2 e 3 se ajustem um ao lado do outro preenchendo o espaço disponivel*/
+    color: #ffffff;
+    height: 100%;
+    width: auto;
+    margin-top: 80px;
+    padding: 20px;
+
+}
+.banner1{
+    background-color: rgb(163, 160, 160);
+
+}
+.banner2{
+    background-color: gray;
+    
+}
+.banner3{
+    background-color: rgb(63, 56, 56);
+    
+    
+}
+.banner_title{
+    font-size: 21px;
+    margin-bottom: 20px;
+
+
+}
+
+
+.descricao{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 21px;
+
+
+}
+.banner_options a {
+    display: inline-block;/* faz com que o botao seja um bloco com mantendo a decoração do texto*/
+    border: 1px solid #ffffff;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+    transition: all 1s linear;
+
+
+}
+.banner1 a:hover{
+    background-color: black;
+}
+.banner2 a:hover{
+    background-color: black;
+}
+
+span{
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-size: 12px;
+    flex-direction: row;
+}
+
+.day1{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 1px solid #555555;
+    margin-bottom: 10px;
+    
+}
+.day2{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 1px solid #555555;
+    margin-bottom: 10px;
+    }
+.day3{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 1px solid #555555;   
+    margin-bottom: 10px;
+
+}
+#geral{
+    display: flex;
+    justify-content: center;
+    
+}
+#geral section{
+    flex: 2;
+    margin-bottom: 20px;
+
+}
+#geral aside{
+    flex: 1;
+
+}
+aside .wiget_body{
+    display: flex; /* Habilita o flexbox */
+    flex-wrap: wrap; /* Permite que as caixas quebrem para a próxima linha se necessário */
+    margin-top: 0; /* Margem superior para espaçamento */
+    
+    
+    
+}
+.wiget_block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;/* transforma o bloco em duas colunas 1 fr 1 fr, maantendo a proporção das duas.*/
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 30px;
+    margin-left: 0;
+
+}
+
+.box{
+    /* flex: 1; */
+    height: 140px; /* Altura fixa */
+    width: 140px;
+    background-image: url('../images/pizza2.jpg');/*endereço da  imagem*/
+    margin: 5px;
+    color: white; /* Cor do texto */
+    
+}
+aside .wiget{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    
+}
+
+.wiget_title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.wiget_title_text{
+    color: #000000;
+    font-size:21px;
+    font-weight: bolder;
+    
+}
+.wiget_title_bar{
+    height: 3px;
+    width: 30px;
+    background-color: gray;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+article .news_data{
+    display: flex;
+    gap: 0.2rem;
+    margin-bottom: 2rem;
+}
+article .news_posted_at{
+    background-color: rgb(34, 9, 9);
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+
+}
+article .news_comments{
+    background-color: gray;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+    
+}
+.imagem img{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    width: 13rem;
+    height: 13rem;
+    margin-bottom: 1.8rem;
+}
+.news_title{
+    color: black;
+    font-size: 20px;
+}
+.news_title a {
+    text-decoration: none;
+    color: #000000;
+    font-family: arial;
+    font-weight: 200;
+}
+.news_resume{
+    color: #5c5c5c;
+    font-size: 14px;
+    line-height: 20px;/* altura entre as linhas*/
+    margin-top: 1rem;
+}
+.news_resumefinal{
+    color: #5c5c5c;
+    font-size: 14px;
+    line-height: 20px;/* altura entre as linhas*/
+    margin-top: 1rem;
+    margin-bottom: 20px;
+}
+
+.wiget_body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* flex-direction: row; */
+    flex-wrap: wrap;/* quando nao couber mais ele quebra a linha com os intens.*/
+
+}
+
+article{
+    flex: 1;/*todos do mesmo tamanho nesse container*/
+    min-width: 250px;
+    margin-right: 2rem;
+    
+}
+footer{
+    background-color: #1e1e1e;
+    display:flex;
+    justify-content: center;
+    padding:  0;
+    width: 100%;
+    height: 100vh;
+    margin-top: 23rem;
+    
+}
+.footer_menu{
+    display: flex;
+    height: 100%;
+   
+    
+}
+.footer_copy{
+    margin-bottom: 5px;
+}
+
+.fm1, .fm2, .fm3{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: #ffffff;
+    height: 100%;
+    width: 20rem;
+    margin-bottom: 1px;
+    margin-top: 0;
+    
+}
+.fm1{
+    background-color:#f38f00 ;
+   
+}
+    
+.fm2{
+    background-color: #f38f00;
+
+}
+.fm3{
+    background-color: #f38f00;
+
+}
+.footer_menu h2{
+    display: flex;
+    color: #ffffff;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0;
+
+}
+.footer_menu p{
+    display: flex;
+    color: #ffffff;
+    font-size: 12px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+
+}
+
+.flexcolumn{
+    flex-direction: column;
+    
+}
+
+.footer_area{
+    display: flex;
+    
+}
+.footer_areaitem{
+    flex: 1;
+    color: #ffffff;
+    
+}
+footer .wiget_title_text{
+    color: #ffffff;
+}
+.footer_copy{
+    border-top: 1px solid #2c2c2c;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    color:#5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+    text-align: center;
+
+}
+.wiget_body{
+    line-height: 1.5rem;
+}
+.wiget_body .numeros{
+    display: flex;
+    flex: 1;
+    font-size: 12px;
+    
+}
+.numeros{
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 3.2rem;
+}   
+.wiget_body .text {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-family: arial;
+    color: #5c5c5c;
+    margin-top: 5px;
+    align-items: center;
+    
+    
+}
+.text p{
+    margin-top: 0;
+    
+}
+.icones{
+    justify-content: center;
+    font-size: 14px;
+  
+}
+
+.icones a {
+    text-decoration: none;
+    color: #5c5c5c;
+    text-align: center;
+    align-items: center;
+    margin-left: 27px;
+    margin-top: 0;
+    
+}
+.icon-text{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    border-top: 1px solid #5c5c5c;
+}
+.menumobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mm_line{
+    height: 4px;
+    background-color: #39aae1;
+}
+@media (max-width:906px){
+    .tituloprincipal h1{
+        font-size: 55px;
+        padding-left: 70px;
+
+    }
+    .tituloprincipal h2{
+        font-size: 17px;
+        padding-left: 70px;
+        margin-bottom: 1px;
+    }
+    .banner_options{
+        display: flex;
+        height: auto;
+        width: auto;
+        flex-direction: column;
+        margin-bottom: 0;
+    
+    }
+    #geral{
+        display: flex;
+        justify-content: center;
+        margin-top: 210px;
+    }
+    .banner1,
+    .banner2,
+    .banner3{
+        margin:0;
+        height: 195.6px;
+        padding-left: 70px;
+}
+    .container{
+       
+        flex-direction: column;
+    
+    }
+    #geral section,
+    #geral aside {
+        padding: 20px;
+
+    }
+    #geral aside {
+       
+        flex-direction: column;
+
+}
+    .footer{
+        background-color: #1e1e1e;
+        display:flex;
+        justify-content: center;
+        padding:  0;
+        width: 100%;
+        height: auto;
+        margin-top: 5rem;
+    }
+    .footer_menu{
+        flex-direction: column;
+    }
+    .footer_area{
+        flex-direction: column;
+        padding: 20px;
+    }
+    header .container{
+        flex-direction: row;
+        padding-left: 80px;
+        margin-top: 0;
+    }
+    header{
+        height: 150px;
+        margin-top: 0;
+       
+    }
+    nav ul{
+        flex-direction: column;
+        display: none;/*oculta o menu por padrao*/
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+    }
+    .logo{
+        padding-left: 0;
+        padding-top: 50px;
+    }
+    .menu{
+        margin-top: 0;
+        padding-top: 20px;     
+    }
+    .menumobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        top: 20px;
+        right: 0;
+
+        
+    }
+    .menu nav{
+        padding-top: 20px;
+    }
+    #banner{
+        width: 100%;
+    
+    }
+    footer{
+        margin-top: 90rem;
+        margin-bottom: 200px;
+        
+    }
+    .footer_area{
+        margin-top: 10rem;
+    }
+
+    .footer_copy{
+        margin-bottom: 0;
+        
+    }
+  
+    aside .wiget_body{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .icones,
+    .text{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        margin-left: 1px;
+    }
+ 
+}
+
+
