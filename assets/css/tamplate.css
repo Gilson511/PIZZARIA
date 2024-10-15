@@ -127,7 +127,7 @@ nav a:hover{
     flex:1;/*flex:1 faz com que os banners 1, 2 e 3 se ajustem um ao lado do outro preenchendo o espaço disponivel*/
     color: #ffffff;
     height: 100%;
-    width: auto;
+    width: 100%;
     margin-top: 80px;
     padding: 20px;
 
@@ -245,7 +245,8 @@ aside .wiget_body{
     /* flex: 1; */
     height: 140px; /* Altura fixa */
     width: 140px;
-    background-image: url('../images/pizza2.jpg');/*endereço da  imagem*/
+    border-radius: 90px;
+    background-color: #f38f00;
     margin: 5px;
     color: white; /* Cor do texto */
     
@@ -498,6 +499,7 @@ footer .wiget_title_text{
         font-size: 55px;
         padding-left: 70px;
 
+
     }
     .tituloprincipal h2{
         font-size: 17px;
@@ -540,6 +542,7 @@ footer .wiget_title_text{
 
 }
     .footer{
+        display: flex;
         background-color: #1e1e1e;
         display:flex;
         justify-content: center;
@@ -547,6 +550,9 @@ footer .wiget_title_text{
         width: 100%;
         height: auto;
         margin-top: 5rem;
+        align-items: center;
+        justify-content: center;
+        
     }
     .footer_menu{
         flex-direction: column;
@@ -599,10 +605,11 @@ footer .wiget_title_text{
     
     }
     footer{
-        margin-top: 90rem;
-        margin-bottom: 200px;
+        margin-top: 90em;
+        margin-bottom: 12.5em;
         
     }
+
     .footer_area{
         margin-top: 10rem;
     }
@@ -627,5 +634,163 @@ footer .wiget_title_text{
     }
  
 }
+@media (max-width:778px){
+
+    .tituloprincipal h1{ 
+        justify-content: center;
+        font-size: 55px;
+        padding-left: 4em;
+        
+
+    }
+    .tituloprincipal h2{
+        font-size: 17px;
+        padding-left: 13em;
+        margin-bottom: 1px;
+    }
+    .banner_options{
+        display: flex;
+        height: auto;
+        max-width: 100%;
+        flex-direction: column;
+        margin-bottom: 0;
+    
+    }
+    #geral{
+        display: flex;
+        justify-content: center;
+        margin-top: 13.12em;
+        margin-left: 6em;
+    }
+    .banner1,
+    .banner2,
+    .banner3{
+        margin:0;
+        height: 195.6px;
+        padding-left: 5.62em;
+}
+    .banner_title{
+        font-size: 21px;
+        margin-bottom: 1.2em;
+        padding-left: 6em;
+    
+    
+    }
+    .descricao{
+        font-size: 12px;
+        margin-top: 1.2em;
+        margin-bottom: 21px;
+        padding-left: 10.8em;
+    }
+    .banner_options a{
+        height: auto;
+        margin-left: 10.8em;
+        
+    
+    }
+    .wiget_title_text{
+        margin-bottom: 2em;
+        margin-top: 5em;
+    }
+    .banner3 span{
+        margin-left: 10.5em;
+    }
+    footer{
+        margin-top: 120em;
+        height: 108em;
+        margin-bottom: 0;
+        width: 50vh;
+        
+    }
+    .footer_area{
+        height: auto;
+
+    }
+
+}
+
+@media (max-width:500px){
+    
+    .tituloprincipal h1{ 
+        justify-content: center;
+        font-size: 55px;
+        padding-left: 5em;
+        
+
+    }
+    .tituloprincipal h2{
+        font-size: 17px;
+        padding-left: 16.5em;
+        margin-bottom: 1px;
+    }
+    .banner_options{
+        display: flex;
+        height: auto;
+        max-width: 100%;
+        flex-direction: column;
+        margin-bottom: 0;
+    
+    }
+    #geral{
+        display: flex;
+        justify-content: center;
+        margin-top: 13.12em;
+        margin-left: 15em;
+    }
+    .banner1,
+    .banner2,
+    .banner3{
+        margin:0;
+        height: 195.6px;
+        padding-left: 5.62em;
+}
+    .banner_title{
+        font-size: 21px;
+        margin-bottom: 1.2em;
+        padding-left: 9em;
+    
+    
+    }
+    .descricao{
+        font-size: 12px;
+        margin-top: 1.2em;
+        margin-bottom: 21px;
+        padding-left: 6.8em;
+    }
+    .banner_options a{
+        height: auto;
+        margin-left: 15.8em;
+        
+    
+    }
+    .wiget_title_text{
+        margin-bottom: 2em;
+        margin-top: 5em;
+    }
+    .banner3 span{
+        margin-left: 15.8em;
+    }
+    #banner{
+        display: flex;
+        justify-content: center;
+        background-position: center;
+        background-size: cover;/*cover recorta a imagem e redmesiona*/
+        height: 44.87rem;
+        margin-top: 0;
+        width: 100%;
+    
+    }
+    .banner_options{
+        width: 100%;
+    }
+   
+    footer{
+        margin-top: 120em;
+        height: 140em;
+        margin-bottom: 0;
+        width: 50vh;
+        
+    }
 
 
+}
