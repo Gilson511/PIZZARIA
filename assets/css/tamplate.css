@@ -700,12 +700,17 @@ footer .wiget_title_text{
         margin-top: 120em;
         height: 108em;
         margin-bottom: 0;
-        width: 50vh;
+        width: 100vh;
         
     }
     .footer_area{
         height: auto;
 
+    }
+    .footer_copy{
+        display: flex;
+        margin-bottom: 0;
+        
     }
     #banner{
         display: flex;
@@ -755,8 +760,9 @@ footer .wiget_title_text{
     #geral{
         display: flex;
         justify-content: center;
-        margin-top: 13.12em;
-        margin-left: 18em;
+        margin-top: 3.12em;
+        margin-left: 25em;
+        align-items: center;
     }
     .banner1,
     .banner2,
@@ -806,11 +812,28 @@ footer .wiget_title_text{
     }
    
     footer{
+        display: flex;
+        justify-content: center;
         margin-top: 120em;
         height: 140em;
         margin-bottom: 0;
         width: 100vh;
         margin-left: 0;
+        
+        
+    }
+    .footer_areaitem{
+        display: flex;
+        justify-content: center;
+        padding-left: 5em;
+    }
+    footer .wiget{
+        padding-left: 5em;
+    }
+    footer .footer_copy{
+        display: flex;
+        padding-left: 15em;
+        
         
     }
     .menumobile{
@@ -822,6 +845,25 @@ footer .wiget_title_text{
         margin-right: 1em;
      
     }
+    aside .wiget{
+        margin-top: 0;
+
+    }
+
+    .footer_menu{
+        display: flex;
+        height: 100%;
+        width: 100%;
+         
+    }
+    .fm1,
+    .fm2,
+    .fm3{
+        display: flex;
+        width: 100%;
+        
+    }
+
 
 
 }
