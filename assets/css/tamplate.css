@@ -759,7 +759,7 @@ footer .wiget_title_text{
     }
     #geral{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         margin-top: 3.12em;
         margin-left: 25em;
         align-items: center;
@@ -860,7 +860,7 @@ footer .wiget_title_text{
     .fm2,
     .fm3{
         display: flex;
-        width: 100%;
+        width: 100vh;
         
     }
 
