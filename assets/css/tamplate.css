@@ -629,13 +629,23 @@ footer .wiget_title_text{
     .icones,
     .text{
         display: flex;
-        gap: 10px;
+        gap: 0;
         flex-direction: column;
-        margin-left: 1px;
+        margin-left: 0;
+        padding-left: 0;
+        
+    }
+    .text p{
+        display: flex;
+        padding-left: 0;
+        text-align: left;
     }
  
 }
 @media (max-width:778px){
+    body{
+        box-sizing: border-box;
+    }
 
     .tituloprincipal h1{ 
         justify-content: center;
@@ -736,6 +746,11 @@ footer .wiget_title_text{
 
 
 @media (max-width:500px){
+    * {
+        font-family: Arial;
+        box-sizing: border-box;
+    }
+    
     
     .tituloprincipal h1{ 
         justify-content: center;
@@ -823,17 +838,21 @@ footer .wiget_title_text{
         
     }
     .footer_areaitem{
-        display: flex;
+        
         justify-content: center;
-        padding-left: 5em;
+
+       
+        
     }
     footer .wiget{
-        padding-left: 5em;
-    }
-    footer .footer_copy{
-        display: flex;
-        padding-left: 15em;
         
+        padding-left: 1em;
+        
+    }
+    .footer_copy{
+        display: flex;
+        margin-bottom: 0;
+        padding-left: 3em;
         
     }
     .menumobile{
@@ -860,10 +879,10 @@ footer .wiget_title_text{
     .fm2,
     .fm3{
         display: flex;
-        width: 100vh;
+        width: 100vw;
+        margin-left: 0;
         
     }
-
-
+   
 
 }
