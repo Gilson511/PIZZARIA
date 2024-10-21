@@ -673,6 +673,21 @@ footer .wiget_title_text{
         margin-top: 13.12em;
         margin-left: 6em;
     }
+    header{
+        
+        position: relative;
+    }
+    .menumobile{
+        position: absolute;
+        right: 0;
+       
+    }
+    .mm_line{
+        height: 4px;
+        background-color: #39aae1;
+        right: 0;
+    }
+
     .banner1,
     .banner2,
     .banner3{
@@ -752,6 +767,7 @@ footer .wiget_title_text{
     padding: 0;
     width: 100%;
     overflow-x: hidden;
+
   }
 
   /* Ajuste de headers, footers ou outros elementos */
@@ -786,13 +802,13 @@ footer .wiget_title_text{
     .tituloprincipal h1{ 
         justify-content: center;
         font-size: 55px;
-        padding-left: 3.5em;
+        padding-left: 5.5em;
         
 
     }
     .tituloprincipal h2{
         font-size: 17px;
-        padding-left: 11em;
+        padding-left: 18em;
         margin-bottom: 1px;
     }
     .banner_options{
@@ -804,12 +820,22 @@ footer .wiget_title_text{
     
     }
     #geral{
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-top: 6.12em;
-        margin-left: 4em;
+        display: flex;
+        margin-top: 14.12em;
         align-items: center;
+        max-width: 100%;
     }
+    #geral .wiget_body{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    #geral aside{
+        display: flex;
+        margin-top: 0;
+    }
+
     .news_resume{
         display: flex;
         max-width: 20em;
@@ -828,7 +854,7 @@ footer .wiget_title_text{
     .banner_title{
         font-size: 21px;
         margin-bottom: 1.2em;
-        padding-left: 5em;
+        padding-left: 10em;
     
     
     }
@@ -858,21 +884,21 @@ footer .wiget_title_text{
         background-size: cover;/*cover recorta a imagem e redmesiona*/
         height: 44.87rem;
         margin-top: 0;
-        width: 35em;
+        max-width: 98%;
     
     }
     .banner_options{
-        width: 45.7em;
+        max-width: 41em;
     }
  
    
     footer{
         display: flex;
         justify-content: center;
-        margin-top: 107em;
-        height: 140em;
+        margin-top:215em;
+        height: 150em;
         margin-bottom: 0;
-        width: 100vh;
+        width: 100%;
         margin-left: 0;
         
         
@@ -886,13 +912,13 @@ footer .wiget_title_text{
     }
     footer .wiget{
         
-        padding-left: 0;
+        padding-left: 6em;
         
     }
     .footer_copy{
         display: flex;
         margin-bottom: 0;
-        padding-left:8em;
+        padding-left:10em;
         
     }
     header{
@@ -927,10 +953,29 @@ footer .wiget_title_text{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100vw;
+        width: 100%;
         margin-left: 0;
+     
+    }
+    .descricao {
+        margin-left: 9.5em;
+        flex-wrap: wrap;
+    }
+    #geral aside{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .wiget_block{
+        display: grid;
+        grid-template-columns: 1fr;
+        flex-direction: column;
 
-        
+    }
+    header .container {
+        flex-direction: row;
+        padding-left: 2em;
+        margin-top: 0;
     }
    
 
