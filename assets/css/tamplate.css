@@ -884,11 +884,11 @@ footer .wiget_title_text{
         background-size: cover;/*cover recorta a imagem e redmesiona*/
         height: 44.87rem;
         margin-top: 0;
-        max-width: 98%;
+        max-width: 100%;
     
     }
     .banner_options{
-        max-width: 41em;
+        max-width: 100%;
     }
  
    
