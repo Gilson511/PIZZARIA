@@ -824,6 +824,8 @@ footer .wiget_title_text{
         margin-top: 14.12em;
         align-items: center;
         max-width: 100%;
+        margin-left: 3em;
+        
     }
     #geral .wiget_body{
         display: flex;
